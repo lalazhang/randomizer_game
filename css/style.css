@@ -1,0 +1,13 @@
+body{
+	background-color: #FFF;
+	font-size: 50px;
+	font-family: Lucida Console, Courier, monospace;
+	/*Syntax:  font-family: family-name|generic-family|initial|inherit;*/
+	color:#801131;
+}
+
+.button{
+	font-size: 20px;
+	color:#801131;
+	font-family: Lucida Console, Courier, monospace;
+}

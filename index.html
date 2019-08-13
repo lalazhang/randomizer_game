@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
+
+		<title>HowAboutYou&LaLa</title>
+		
+		<!-- external CSS link -->
+		
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+			var user=prompt("What is your name? 🙃 ");
+
+		
+
+			// Our List of Bars
+			var places = [
+				'Greece 🇬🇷',
+				'India 🇮🇳',
+				'Jordan 🇯🇴',
+				'Italy 🇮🇹',
+				'China 🇨🇳',
+				'Germany 🇩🇪'
+			];
+
+			// Our List of Friends
+			var dos = [
+				
+				'see Acropolis of Athens',
+				'see Taj Mahal ',
+				'visit Al-Khazneh',
+				'visit Cinque Terre',
+				'walk in the winter of Forbidden City',
+				'visit Neuschwanstein Castle (New Swan Stone Palace)'
+				
+			];
+
+			var images= ["img/acropolis.jpg","img/tajMahal.jpg",
+			"img/AlKhazneh.jpg", "img/cinqueTerre.jpg","img/guGong.jpg","img/Neuschwanstein.jpg"];
+
+
+
+			var randomNumber1 =Math.floor(Math.random()*places.length);
+			/* 0< Math.random() <1  */
+			/* Math.floor 3.44 becomes 3 */
+			/*var randomNumber2=Math.floor(Math.random()*dos.length)*/
+			
+			var place = places[randomNumber1];
+			var ado = dos[randomNumber1];
+			var image=images[randomNumber1];
+
+			function getImage(){
+				var img=document.createElement("img")
+				img.src=image;
+
+			    document.body.appendChild(img);  
+			}
+
+
+			document.write("Hello <strong>" +user+"</strong> ! How about we go to <strong>" + place+ "</strong> to <strong>" + ado + "</strong>?" );
+			document.body.appendChild(img);
+
+
+
+			
+
+		
+		</script>
+		<button class="button" onclick="getImage();">Show me How it LOok 🧐               </button>
+
+
+		
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
+</html>
